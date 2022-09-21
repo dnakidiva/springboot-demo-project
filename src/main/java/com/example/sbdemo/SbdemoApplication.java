@@ -17,7 +17,6 @@ public class SbdemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SbdemoApplication.class, args);
 
+
 	}
-
-
-}
+ }
