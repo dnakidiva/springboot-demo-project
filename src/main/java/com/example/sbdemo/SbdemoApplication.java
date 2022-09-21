@@ -11,7 +11,7 @@ import java.time.Month;
 import java.util.List;
 
 @SpringBootApplication
-@RestController
+
 public class SbdemoApplication {
 
 	public static void main(String[] args) {
@@ -19,17 +19,5 @@ public class SbdemoApplication {
 
 	}
 
-   @GetMapping
-	public List<Customer> hello() {
-		return List.of(
-				new Customer(
-						23L,
-						"Natalie",
-						"natalie.adisa@gmail.com",
-						LocalDateTime.of(2000, Month.JUNE,23,7,30),
-						22
 
-				)
-		);
-	}
 }
