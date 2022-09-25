@@ -1,9 +1,12 @@
 package com.example.sbdemo.customer;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.List;
-
+@Service
 public class CustomerService {
 
  public List<Customer> getCustomers() {
