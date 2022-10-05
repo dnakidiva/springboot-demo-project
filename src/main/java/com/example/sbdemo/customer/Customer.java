@@ -1,7 +1,8 @@
 package com.example.sbdemo.customer;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.LocalDate;
 @Entity
 @Table
     public class Customer {
@@ -20,7 +21,7 @@ import java.time.LocalDateTime;
         private Long id;
         private String name;
         private String email;
-        private LocalDateTime dob;
+        private LocalDate dob;
         private Integer age;
 
         public Customer() {
@@ -29,7 +30,7 @@ import java.time.LocalDateTime;
         public Customer(Long id,
                         String name,
                         String email,
-                        LocalDateTime dob,
+                        LocalDate dob,
                         Integer age) {
             this.id = id;
             this.name = name;
@@ -38,7 +39,7 @@ import java.time.LocalDateTime;
             this.age = age;
         }
 
-        public Customer(String name, String email, LocalDateTime dob, Integer age) {
+        public Customer(String name, String email, LocalDate dob, Integer age) {
             this.name = name;
             this.email = email;
             this.dob = dob;
@@ -69,11 +70,11 @@ import java.time.LocalDateTime;
             this.email = email;
         }
 
-        public LocalDateTime getDob() {
+        public LocalDate getDob() {
             return dob;
         }
 
-        public void setDob(LocalDateTime dob) {
+        public void setDob(LocalDate dob) {
             this.dob = dob;
         }
 
